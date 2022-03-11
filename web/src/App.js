@@ -36,7 +36,7 @@ function App() {
       <header> 
         <div className="header"> 
           <div className="container">
-            <h1> Lista de Animes - Kitsu </h1> 
+            <h1> AnimaVita </h1> 
           </div>
         </div> 
       </header>
