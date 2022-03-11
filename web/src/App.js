@@ -1,7 +1,5 @@
 import './App.css';
 import Posts from './components/Posts';
-
-import Anime from './components/Animes';
 import Pagination from './components/Pagination';
 import api from './api/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -24,7 +22,6 @@ function App() {
 
     fetchPosts();
   }, []);
-  console.log(posts.length)
 
   // Get current posts
   const indexOfLastPost = currentPage * postsPerPage;
@@ -51,20 +48,6 @@ function App() {
       />
     </div>
   );
-  // return (
-    
-  //   <div className="App">
-  //     <header> 
-  //       <div className="header"> 
-  //         <div className="container">
-  //           <h1> Lista de Animes - Kitsu </h1> 
-  //         </div>
-       
-  //       </div> 
-  //     </header>
-  //     <Anime />
-  //   </div>
-  // );
 }
 
 export default App;
