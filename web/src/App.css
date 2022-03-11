@@ -1,0 +1,10 @@
+.header{
+    background-color: black;
+}
+header h1 {
+    height: 100px;
+    line-height: 100px;
+    font-size: 50px;
+    color: white;
+    font-weight: 400;
+}
