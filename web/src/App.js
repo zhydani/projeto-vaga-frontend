@@ -1,9 +1,9 @@
 import './App.css';
 import Posts from './components/Posts';
-import Pagination from './components/Pagination';
 import api from './api/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { useEffect, useState } from 'react';
+import Paginations from './components/Pagination';
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -41,7 +41,7 @@ function App() {
         </div> 
       </header>
       <Posts posts={currentPosts} loading={loading} />
-      <Pagination
+      <Paginations
         postsPerPage={postsPerPage}
         totalPosts={posts.length}
         paginate={paginate}
