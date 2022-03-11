@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import api from '../api/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './animes.css';
-import { useState } from 'react';
 
 const MAX_LENGTH = 120;
 
