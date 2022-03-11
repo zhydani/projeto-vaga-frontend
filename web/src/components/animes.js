@@ -3,24 +3,14 @@ import api from '../api/api';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './animes.css';
 import { useState } from 'react';
+
 const MAX_LENGTH = 120;
-class Anime extends Component {
 
-  state = {
-    animes: [],
-  }
-
-  async componentDidMount() {
-    const response = await api.get('anime');
-    // console.log(response.data.data)
-
-    this.setState({ animes: response.data.data });
-
-  }
+class Anime extends Component  {
 
   render() {
 
-    const { animes } = this.state;
+    const { animes } = this.props;
 
     return (
         <div className="container">
