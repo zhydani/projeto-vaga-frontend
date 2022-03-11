@@ -1,5 +1,5 @@
 import React from 'react';
-import Anime from './Animes';
+import Anime from './animes';
 
 const Posts = ({ posts, loading }) => {
   if (loading) {
